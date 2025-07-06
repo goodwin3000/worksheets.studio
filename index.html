@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worksheets.Studio - AI-Powered Interactive Worksheet Generator for Language Teachers</title>
+    <meta name="description" content="Worksheets.Studio is coming soon! Get ready for an innovative AI-powered tool designed to help language teachers create, customize, and distribute interactive digital worksheets for English (ESL/EFL) and other languages. Save time and enhance learning.">
+    <meta name="keywords" content="AI worksheet generator, language teachers, ESL worksheets, EFL worksheets, interactive worksheets, digital worksheets, English language learning, grammar exercises, vocabulary practice, lesson planning, teacher tools, AI in education, worksheets for students, fill-in-the-blanks, matching exercises, word scrambles, drag-and-drop, online worksheets">
+    <meta name="author" content="WS-STUDIO">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://worksheets.studio/">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #3498db; /* Bright Blue */
+            --secondary-color: #2c3e50; /* Dark Blue-Grey */
+            --text-color: #444;
+            --background-light: #ecf0f1; /* Light Grayish Blue */
+            --background-dark: #bdc3c7; /* Medium Gray */
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--background-light) 0%, var(--background-dark) 100%);
+            color: var(--text-color);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevent scroll on subtle animations */
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            background-color: var(--card-background);
+            padding: 50px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+            position: relative;
+            z-index: 1;
+            animation: fadeInScale 1s ease-out forwards;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--secondary-color);
+            font-size: 3em;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+            animation: slideInTop 1s ease-out forwards;
+        }
+
+        p {
+            font-size: 1.15em;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInText 1.5s ease-out forwards;
+            opacity: 0; /* Start hidden for animation */
+        }
+
+        p:nth-of-type(1) { animation-delay: 0.5s; }
+        p:nth-of-type(2) { animation-delay: 0.8s; }
+        p:nth-of-type(3) { animation-delay: 1.1s; }
+        p:nth-of-type(4) { animation-delay: 1.4s; }
+
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: var(--secondary-color);
+            opacity: 0.7;
+            animation: fadeIn 2s ease-out forwards;
+            animation-delay: 1.8s;
+        }
+
+        /* Subtle background animation/effect */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(52, 152, 219, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at bottom right, rgba(44, 62, 80, 0.1) 0%, transparent 50%);
+            z-index: 0;
+            animation: pulseBackground 10s infinite alternate;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInTop {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulseBackground {
+            0% { background-size: 150% 150%; }
+            100% { background-size: 100% 100%; }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Worksheets.Studio is Coming Soon!</h1>
+        <p>Get ready for a <span class="highlight">revolutionary AI-powered interactive worksheet generator</span> designed specifically for <span class="highlight">language teachers</span>. We're building a tool that will dramatically reduce the time you spend on material preparation while enhancing the quality and interactivity of your lessons.</p>
+        <p>Our platform will leverage <span class="highlight">generative AI</span> to help you effortlessly create, customize, and distribute engaging digital worksheets. Imagine generating context-rich fill-in-the-blanks, thematic word scrambles, logical matching exercises, and even drag-and-drop activities in minutes, not hours.</p>
+        <p>Worksheets.Studio will understand your educational intent and adapt content based on <span class="highlight">student level, age group, and learning objectives</span>. Say goodbye to tedious formatting – our smart formatting ensures responsive layouts and print compatibility automatically.</p>
+        <p>Stay tuned for updates on how this innovative tool will transform your English (ESL/EFL) and other language classes!</p>
+    </div>
+    <footer>
+        &copy; 2025 Worksheets.Studio. All rights reserved.
+    </footer>
+</body>
+</html>
